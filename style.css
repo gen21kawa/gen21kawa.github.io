@@ -26,22 +26,6 @@ body {
 
 .header-top {
     padding: 16px;
-    display: flex;
-    align-items: center;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    margin-right: 16px;
-}
-
-.menu-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
 }
 
 .header-top h1 {
@@ -85,18 +69,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-drawer {
-        display: none;
-    }
-
-    .nav-drawer.open {
-        display: block;
-    }
-
     .nav-drawer ul {
         flex-direction: column;
     }
@@ -104,25 +76,4 @@ body {
     .nav-drawer ul li a {
         padding: 12px 16px;
     }
-}
-
-footer {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 20px 0 0 0;
-    font-size: 0.9em;
-    margin-top: auto; /* This pushes the footer to the bottom */
-}
-
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
-.color-bar {
-    height: 5px;
-    background: linear-gradient(to right, var(--primary-color), var(--primary-dark));
-    margin-top: 20px;
 }
