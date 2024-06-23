@@ -171,6 +171,7 @@ footer {
         font-size: 1.2em;
     }
 }
+/* Add or update these styles in your style.css file */
 
 #menu-toggle {
     display: none;
@@ -191,6 +192,7 @@ footer {
 
     nav {
         display: none;
+        background-color: var(--main-color-dark);
     }
 
     nav.show {
@@ -202,12 +204,23 @@ footer {
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 0;
         width: 100%;
     }
 
     nav ul li a {
         display: block;
         padding: 10px;
+        border-bottom: 1px solid var(--main-color);
     }
+}
+
+/* Remove the profile image styles */
+.profile-img {
+    display: none;
+}
+
+/* Adjust header padding */
+header {
+    padding: 10px 20px;
 }

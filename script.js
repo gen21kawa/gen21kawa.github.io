@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Highlight the current page in the navigation
-    const currentPage = window.location.pathname.split("/").pop();
+    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
     const navItems = document.querySelectorAll('nav a');
     navItems.forEach(link => {
         if (link.getAttribute('href') === currentPage) {
