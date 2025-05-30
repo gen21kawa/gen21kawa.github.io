@@ -1,45 +1,86 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Genji Kawakita</title>
+    <meta name="description" content="Learn more about Genji Kawakita, PhD student in Neurotechnology at Imperial College London">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <div class="header-name">
-            <h1>Genji Kawakita</h1>
+        <div class="header-content">
+            <div class="header-name">
+                <h1>Genji Kawakita</h1>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="content">
-        <section class="section">
+    <main>
+        <section class="section fade-in">
             <h2>About Me</h2>
-            <p>I am a PhD student in Neurotechnology at Imperial College London.</p>
+            <div class="card">
+                <h3>Background</h3>
+                <p>I am a PhD student in Neurotechnology at Imperial College London, passionate about bridging the gap between neuroscience and cutting-edge technology.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>PhD in Bioengieering</strong> - Imperial College London (Current)</li>
+                    <li><strong>MRes in Neurotechnology</strong> - Imperial College London (2022)</li>
+                    <li><strong>BA in Mathematics</strong> - Swarthmore College (2021)</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Research Philosophy</h3>
+                <p>I believe in the power of interdisciplinary collaboration to solve complex challenges.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Skills & Expertise</h3>
+                <div class="grid">
+                    <div>
+                        <h4>Technical Skills</h4>
+                        <ul>
+                            <li>Neural Signal Processing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Research Areas</h4>
+                        <ul>
+                            <li>Brain-Computer Interfaces</li>
+                            <li>Computational Neuroscience</li>
+                            <li>Consciousness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 Genji Kawakita. All rights reserved.</p>
+            <p>&copy; 2024 Genji Kawakita. All rights reserved.</p>
         </div>
-        <div class="color-bar"></div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

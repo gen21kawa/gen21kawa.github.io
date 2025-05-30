@@ -1,50 +1,74 @@
-<!-- research.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Research</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Genji Kawakita</title>
+    <meta name="description" content="Research interests and projects by Genji Kawakita in neurotechnology and brain-computer interfaces">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <div class="header-name">
-            <h1>Genji Kawakita</h1>
+        <div class="header-content">
+            <div class="header-name">
+                <h1>Genji Kawakita</h1>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="content">
-        <section class="section">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Neural Control of Movement</li>
-                <li>Computational Neroscience</li>
-                <li>Brain-Computer Interface</li>
-                <li>Consciousness</li>
-            </ul>
+    <main>
+        <section class="section fade-in">
+            <h1 class="page-title">Research</h1>
+            <p class="subtitle">Exploring the frontiers of neurotechnology and brain-computer interfaces</p>
         </section>
+
+        <section class="section">
+            <h2>Current Research Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Brain-Computer Interface with Mice</h3>
+                    <p>Investigating the potential of brain-computer interfaces (BCIs) in rodent models.</p>
+                    <p class="text-small mt-2">Status: Ongoing</p>
+                </div>
+                <div class="card">
+                    <h3>Neuromuscular Modeling with MyoSuite</h3>
+                    <p>Utilizing MyoSuite for advanced neuromuscular simulations to study adaptation to changes in the musculoskeletal system.</p>
+                    <p class="text-small mt-2">Status: Ongoing</p>
+                </div>
+                <div class="card">
+                    <h3>Unsupervised Alignment of Qualia Structures</h3>
+                    <p>Proposed an unsupervised alignment framework for comparing the structures of qualia across individuals</p>
+                    <p class="text-small mt-2">Status: Done</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 Genji Kawakita. All rights reserved.</p>
+            <p>&copy; 2024 Genji Kawakita. All rights reserved.</p>
         </div>
-        <div class="color-bar"></div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -3,50 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Blog - Genji Kawakita</title>
+    <meta name="description" content="Thoughts on neurotechnology, research, and academic life by Genji Kawakita">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-name">
-            <h1>Genji Kawakita</h1>
+        <div class="header-content">
+            <div class="header-name">
+                <h1>Genji Kawakita</h1>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="content">
-        <h1>Blog</h1>
-        
-        <article class="blog-post">
-            <h2>My Latest Research Findings</h2>
-            <p class="date">June 15, 2024</p>
-            <p>In this post, I discuss the exciting results from my recent experiment in applying transformer models to code generation...</p>
-            <a href="#" class="read-more">Read more</a>
-        </article>
+    <main>
+        <section class="section fade-in">
+            <h1 class="page-title">Blog</h1>
+            <p class="subtitle">Thoughts on neurotechnology, research, and academic life</p>
+        </section>
 
-        <article class="blog-post">
-            <h2>Reflections on My First Year as a PhD Student</h2>
-            <p class="date">May 30, 2024</p>
-            <p>As I wrap up my first year in the PhD program, I want to share some insights and lessons learned...</p>
-            <a href="#" class="read-more">Read more</a>
-        </article>
+        <section class="section">
+            <div class="blog-grid">
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-box text-center">
+                <h3>Subscribe to Updates</h3>
+                <p>Get notified when I publish new posts about neurotechnology and research.</p>
+                <form class="subscribe-form mt-3">
+                    <input type="email" placeholder="Enter your email" class="subscribe-input" required>
+                    <button type="submit" class="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 Genji Kawakita. All rights reserved.</p>
+            <p>&copy; 2024 Genji Kawakita. All rights reserved.</p>
         </div>
-        <div class="color-bar"></div>
     </footer>
 
     <script src="script.js"></script>

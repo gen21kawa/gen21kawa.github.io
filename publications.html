@@ -1,49 +1,118 @@
-<!-- publications.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Publications</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Genji Kawakita</title>
+    <meta name="description" content="Academic publications and conference presentations by Genji Kawakita">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <div class="header-name">
-            <h1>Genji Kawakita</h1>
+        <div class="header-content">
+            <div class="header-name">
+                <h1>Genji Kawakita</h1>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html" class="active">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-
-    <main class="content">
-        <section class="section">
-            <h2>Publications</h2>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+    <main>
+        <section class="section fade-in">
+            <h1 class="page-title">Publications</h1>
+            <p class="subtitle">Peer-reviewed papers and conference presentations</p>
         </section>
+
+        <section class="section">
+            <h2>Journal Articles</h2>
+            <div class="publications-list">
+                <article class="publication-item">
+                    <h3>Is my "red" your "red"?: Evaluating structural correspondences between color similarity judgments using unsupervised alignment</h3>
+                    <p class="authors">Kawakita, G., Zeleznikow-Johnston, A., Takeda, K., Tsuchiya, N., Oizumi, M.</p>
+                    <p class="journal">iScience, 2025</p>
+                    <p class="abstract">Whether one person's subjective experience of the "redness" of red is equivalent to another's is a fundamental question in consciousness studies. Intersubjective comparison of the relational structures of sensory experiences, termed "qualia structures", can constrain the question. We propose an unsupervised alignment method, based on optimal transport, to find the optimal mapping between the similarity structures of sensory experiences without presupposing correspondences (such as "red-to-red"). After collecting subjective similarity judgments for 93 colors, we showed that the similarity structures derived from color-neurotypical participants can be "correctly" aligned at the group level. In contrast, those of color-blind participants could not be aligned with color-neurotypical participants. Our results provide quantitative evidence for interindividual structural equivalence or difference of color qualia, implying that color-neurotypical people's "red" is relationally equivalent to other color-neurotypical's "red", but not to color-blind people's "red". This method is applicable across modalities, enabling general structural exploration of subjective experiences.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1016/j.isci.2025.112029" class="link-button">DOI</a>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11926686" class="link-button">PMC</a>
+                    </div>
+                </article>
+
+                <article class="publication-item">
+                    <h3>Gromov-Wasserstein unsupervised alignment reveals structural correspondences between the color similarity structures of humans and large language models</h3>
+                    <p class="authors">Kawakita, G., Zeleznikow-Johnston, A., Tsuchiya, N., Oizumi, M.</p>
+                    <p class="journal">Scientific Reports, 2024</p>
+                    <p class="abstract">Large Language Models (LLMs), such as the General Pre-trained Transformer (GPT), have shown remarkable performance in various cognitive tasks. However, it remains unclear whether these models have the ability to accurately infer human perceptual representations. Previous research has addressed this question by quantifying correlations between similarity response patterns of humans and LLMs. Correlation provides a measure of similarity, but it relies pre-defined item labels and does not distinguish category- and item- level similarity, falling short of characterizing detailed structural correspondence between humans and LLMs. To assess their structural equivalence in more detail, we propose the use of an unsupervised alignment method based on Gromov-Wasserstein optimal transport (GWOT). GWOT allows for the comparison of similarity structures without relying on pre-defined label correspondences and can reveal fine-grained structural similarities and differences that may not be detected by simple correlation analysis. Using a large dataset of similarity judgments of 93 colors, we compared the color similarity structures of humans (color-neurotypical and color-atypical participants) and two GPT models (GPT-3.5 and GPT-4). Our results show that the similarity structure of color-neurotypical participants can be remarkably well aligned with that of GPT-4 and, to a lesser extent, to that of GPT-3.5. These results contribute to the methodological advancements of comparing LLMs with human perception, and highlight the potential of unsupervised alignment methods to reveal detailed structural correspondences.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1038/s41598-024-65604-1" class="link-button">DOI</a>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11237038" class="link-button">PMC</a>
+                    </div>
+                </article>
+
+                <article class="publication-item">
+                    <h3>Optimal Control Costs of Brain State Transitions in Linear Stochastic Systems</h3>
+                    <p class="authors">Kamiya, S., Kawakita, G., Sasai, S., Kitazono, J., Oizumi, M.</p>
+                    <p class="journal">Journal of Neuroscience, 2022</p>
+                    <p class="abstract">The brain is a system that performs numerous functions by controlling its states. Quantifying the cost of this control is essential as it reveals how the brain can be controlled based on the minimization of the control cost, and which brain regions are most important to the optimal control of transitions. Despite its great potential, the current control paradigm in neuroscience uses a deterministic framework and is therefore unable to consider stochasticity, severely limiting its application to neural data. Here, to resolve this limitation, we propose a novel framework for the evaluation of control costs based on a linear stochastic model. Following our previous work, we quantified the optimal control cost as the minimal Kullback-Leibler divergence between the uncontrolled and controlled processes. In the linear model, we established an analytical expression for minimal cost and showed that we can decompose it into the cost for controlling the mean and covariance of brain activity. To evaluate the utility of our novel framework, we examined the significant brain regions in the optimal control of transitions from the resting state to seven cognitive task states in human whole-brain imaging data of either sex. We found that, in realizing the different transitions, the lower visual areas commonly played a significant role in controlling the means, while the posterior cingulate cortex commonly played a significant role in controlling the covariances.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1523/JNEUROSCI.1053-22.2022" class="link-button">DOI</a>
+                    </div>
+                </article>
+
+                <article class="publication-item">
+                    <h3>Quantifying brain state transition cost via Schrödinger Bridge</h3>
+                    <p class="authors">Kawakita, G., Kamiya, S., Sasai, S., Kitazono, J., Oizumi, M.</p>
+                    <p class="journal">Network Neuroscience, 2022</p>
+                    <p class="abstract">Quantifying brain state transition cost is a fundamental problem in systems neuroscience. Previous studies utilized network control theory to measure the cost by considering a neural system as a deterministic dynamical system. However, this approach does not capture the stochasticity of neural systems, which is important for accurately quantifying brain state transition cost. Here, we propose a novel framework based on optimal control in stochastic systems. In our framework, we quantify the transition cost as the Kullback-Leibler divergence from an uncontrolled transition path to the optimally controlled path, which is known as Schrödinger Bridge. To test its utility, we applied this framework to functional magnetic resonance imaging data from the Human Connectome Project and computed the brain state transition cost in cognitive tasks. We demonstrate correspondence between brain state transition cost and the difficulty of tasks. The results suggest that our framework provides a general theoretical tool for investigating cognitive functions from the viewpoint of transition cost.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1162/netn_a_00213" class="link-button">DOI</a>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8959122" class="link-button">PMC</a>
+                    </div>
+                </article>
+
+                <article class="publication-item">
+                    <h3>Network structure and input integration in competing firing rate models for decision-making</h3>
+                    <p class="authors">Barranca, V.J., Huang, H., Kawakita, G.</p>
+                    <p class="journal">Journal of Computational Neuroscience, 2019</p>
+                    <p class="abstract">Making a decision among numerous alternatives is a pervasive and central undertaking encountered by mammals in natural settings. While decision making for two-option tasks has been studied extensively both experimentally and theoretically, characterizing decision making in the face of a large set of alternatives remains challenging. We explore this issue by formulating a scalable mechanistic network model for decision making and analyzing the dynamics evoked given various potential network structures. In the case of a fully-connected network, we provide an analytical characterization of the model fixed points and their stability with respect to winner-take-all behavior for fair tasks. We compare several means of input integration, demonstrating a more gradual sigmoidal transfer function is likely evolutionarily advantageous relative to binary gain commonly utilized in engineered systems. We show via asymptotic analysis and numerical simulation that sigmoidal transfer functions with smaller steepness yield faster response times but depreciation in accuracy. However, in the presence of noise or degradation of connections, a sigmoidal transfer function garners significantly more robust and accurate decision-making dynamics. For fair tasks and sigmoidal gain, our model network also exhibits a stable parameter regime that produces high accuracy and persists across tasks with diverse numbers of alternatives and difficulties, satisfying physiological energetic constraints. In the case of more sparse and structured network topologies, including random, regular, and small-world connectivity, we show the high-accuracy parameter regime persists for biologically realistic connection densities. Our work shows how neural system architecture is potentially optimal in making economic, reliable, and advantageous decisions across tasks.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1007/s10827-018-0708-6" class="link-button">DOI</a>
+                    </div>
+                </article>
+
+                <article class="publication-item">
+                    <h3>Larger Stimuli Require Longer Processing Time for Perception</h3>
+                    <p class="authors">Kanai, R., Dalmaijer, E.S., Sherman, M.T., Kawakita, G., Paffen, C.L.E.</p>
+                    <p class="journal">Perception, 2017</p>
+                    <p class="abstract">The time it takes for a stimulus to reach awareness is often assessed by measuring reaction times (RTs) or by a temporal order judgement (TOJ) task in which perceived timing is compared against a reference stimulus. Dissociations of RT and TOJ have been reported earlier in which increases in stimulus intensity such as luminance intensity results in a decrease of RT, whereas perceived perceptual latency in a TOJ task is affected to a lesser degree. Here, we report that a simple manipulation of stimulus size has stronger effects on perceptual latency measured by TOJ than on motor latency measured by RT tasks. When participants were asked to respond to the appearance of a simple stimulus such as a luminance blob, the perceptual latency measured against a standard reference stimulus was up to 40 ms longer for a larger stimulus. In other words, the smaller stimulus was perceived to occur earlier than the larger one. RT on the other hand was hardly affected by size. The TOJ results were further replicated in a simultaneity judgement task, suggesting that the effects of size are not due to TOJ-specific response biases but more likely reflect an effect on perceived timing.</p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.1177/0301006617695573" class="link-button">DOI</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 Genji Kawakita. All rights reserved.</p>
+            <p>&copy; 2024 Genji Kawakita. All rights reserved.</p>
         </div>
-        <div class="color-bar"></div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
