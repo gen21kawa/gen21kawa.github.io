@@ -4,7 +4,6 @@
     "label": "PhD Student",
     "image": "",
     "email": "g.kawakita22@imperial.ac.uk",
-    "phone": "***REMOVED***",
     "url": "https://gen21kawa.github.io",
     "summary": "PhD student in Bioengineering at Imperial College London, working on computational neuroscience and motor control.",
     "location": {
@@ -90,33 +89,6 @@
       "studyType": "BA",
       "startDate": "2016-08-01",
       "endDate": "2021-05-01"
-    }
-  ],
-  "awards": [
-    {
-      "title": "JASSO Overseas Study Support Program (Graduate Degree Program)",
-      "date": "2024-01-01",
-      "awarder": "Japan Student Services Organization (JASSO)"
-    },
-    {
-      "title": "BRAVE GLOBAL - Startup Creation Program",
-      "date": "2024-01-01",
-      "awarder": "Beyond Next Ventures"
-    },
-    {
-      "title": "Ezoe Memorial Recruit Scholarship (Academic Division)",
-      "date": "2016-01-01",
-      "awarder": "Ezoe Memorial Recruit Foundation"
-    },
-    {
-      "title": "Grew Bancroft Scholarship",
-      "date": "2016-01-01",
-      "awarder": "Grew Bancroft Foundation"
-    },
-    {
-      "title": "Japan Brain Bee - National Gold Medal",
-      "date": "2015-01-01",
-      "awarder": "Japan Brain Bee"
     }
   ],
   "languages": [
